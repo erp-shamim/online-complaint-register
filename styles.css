@@ -1,0 +1,31 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+#captchaText {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+#fileList {
+    font-size: 14px;
+}
+input::placeholder{
+    color: #ec0000;
+}
+
+/* File size error styling */
+.file-error {
+    color: #dc3545;
+    font-size: 14px;
+}
