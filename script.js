@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const fileList = document.getElementById('fileList');
     const captchaText = document.getElementById('captchaText');
     const captchaInput = document.getElementById('captchaInput');
-    // const regenrateCaptcha =document.getElementById('regenrateCaptcha');
     const successModal = new bootstrap.Modal(document.getElementById('successModal'));
     
     let captchaCode = '';

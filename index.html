@@ -21,25 +21,25 @@
                         <form id="complaintForm" enctype="multipart/form-data">
                             <!-- Customer Name -->
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name*</label>
+                                <label for="name" class="form-label">Name<span class="required_fields">*</span></label>
                                 <input type="text" class="form-control" id="customerName" required>
                             </div>
 
                             <!-- Contact (Phone) -->
                             <div class="mb-3">
-                                <label for="phone" class="form-label">Phone Number*</label>
+                                <label for="phone" class="form-label">Phone Number<span class="required_fields">*</span></label>
                                 <input type="tel" class="form-control" id="phone" required>
                             </div>
 
                             <!-- Contact (Email) -->
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email*</label>
+                                <label for="email" class="form-label">Email<span class="required_fields">*</span></label>
                                 <input type="email" class="form-control" id="email" required>
                             </div>
 
                             <!-- Complaint Category -->
                             <div class="mb-3">
-                                <label for="category" class="form-label">Complaint Category*</label>
+                                <label for="category" class="form-label">Complaint Category<span class="required_fields">*</span></label>
                                 <select class="form-select" id="category" required>
                                     <option value="" disabled selected>Select a category</option>
                                     <option value="delay">Service-related</option>
@@ -53,7 +53,7 @@
 
                             <!-- Description -->
                             <div class="mb-3">
-                                <label for="description" class="form-label">Description of Issue*</label>
+                                <label for="description" class="form-label">Description of Issue<span class="required_fields">*</span></label>
                                 <textarea class="form-control" id="description" rows="4" maxlength="5000" required></textarea>
                             </div>
 
@@ -67,11 +67,10 @@
 
                             <!-- CAPTCHA -->
                             <div class="mb-3">
-                                <label class="form-label">Verify you're human?*</label>
+                                <label class="form-label">Verify you're human?<span class="required_fields">*</span></label>
                                 <div class="d-flex align-items-center">
                                     <strong><span id="captchaText" class="p-2 me-2" style="background-color: #adb5bd;"></span></strong>
-                                    <input type="text" class="form-control w-25" id="captchaInput" placeholder="Enter CAPTCHA" required>
-                                    <!-- <button class="btn" id="regenrateCaptcha" onclick="generateCaptcha()"> </button> -->
+                                    <input type="text" class="form-control w-50" id="captchaInput" placeholder="Enter CAPTCHA" required>
                                 </div>
                             </div>
 
